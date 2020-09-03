@@ -35,6 +35,9 @@ button:hover{
 .logo:hover{
 	background-color: white;
 }
+.logo a:hover{
+  color: black;
+}
 a{
 	color: black;
 	text-decoration: none;
@@ -261,6 +264,10 @@ footer{
 
 
 .albumChoice{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  opacity: 50%;
 }
 .albumChoice:hover{
   background-color: #9683EC;
@@ -270,3 +277,5 @@ footer{
   width: 100%;
   margin-bottom: 30px;
 }
+
+
