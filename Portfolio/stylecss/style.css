@@ -1,0 +1,272 @@
+header{
+	height: 160px;
+	padding-top: 20px;
+}
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	float: right;
+}
+li{
+	list-style:none;
+	padding-right: 12px;
+	margin-right:12px;
+	border-right: solid;
+	border-right-color: black;
+}
+button{
+	border: none;
+	color: black;
+	background-color: white;
+}
+
+button:hover{
+	background-color: #9683EC;
+}
+.logo:hover{
+	background-color: white;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+hr
+{
+	text-align: center;
+    width: 70%;
+}
+.dropmain{
+    width: 70%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	text-align: center;
+}
+
+.boutonmenuprincipal {
+	cursor: pointer;
+}
+.boutonmenuprincipal:hover {
+	background-color: #9683EC;
+	color: white;
+}
+.dropdown {
+	position: absolute;
+	display: inline-block;
+}
+.dropdown-child {
+	display: none;
+	min-width: 50px;
+}
+.dropdown-child a {
+	color: black;
+	background-color: white;
+	height: 25px;
+	text-decoration: none;
+	display: block;
+	padding: 0px;
+
+
+}
+.dropdown-child a:hover {
+	background-color: #9683EC;
+	color: white;
+}
+.dropdown:hover .dropdown-child {
+	display: block;
+}
+
+
+
+#bienvenue{
+	width: auto;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+h1{
+	text-align: center;
+	font-size: 70px;
+}
+mark{
+	color: white;
+	background-color: #9683EC;
+}
+br {
+ content: "";
+ display: block;
+ margin-bottom: 40px;
+}
+
+#mePicture{
+	width: auto;
+	height: 150px;
+}
+
+
+
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: auto;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #CCC;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+.button {
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 90px; /* même taille que les étiquettes */
+
+  
+}
+
+.square_btn{
+    display: inline-block;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #9683EC;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    transition: .4s;
+    position: relative;
+}
+.square_btn span{
+	position: relative;
+	z-index: 1;
+}
+ .square_btn:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 300%;
+      width: 145%;
+      background: #292252;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+      transform: translateX(-100%) translateY(-25%) rotate(45deg);
+      }
+.square_btn:hover:after {
+	background-color: #292252;
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+#contactPicture{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+  margin-top: 200px;
+  padding-bottom: 100px;
+  background-color: black;
+}
+#txtWhite{
+  color: white;
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
+.albumChoice{
+}
+.albumChoice:hover{
+  background-color: #9683EC;
+}
+
+.albumPicture{
+  width: 100%;
+  margin-bottom: 30px;
+}
