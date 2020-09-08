@@ -4,11 +4,12 @@ function scrollTo(hash) {
 }
 
 function modifierSize(theId) {
+    var hauteur = window.innerHeight;
     var myImg = document.getElementById(theId);
-    var width = myImg.clientWidth;
+    var width = myImg.style.width;
     var grid = document.getElementById('try');
     if (cpt == 0) {
-        grid.style.columns = 1 + " 200px";
+        grid.style.columns = 2 + " 200px";
         scrollTo(theId);
         cpt = 1;
     } else {
