@@ -1,43 +1,5 @@
-/**
-
-function darkTemplate(){
-	var myTemplate = document.getElementById("myTemplate");
-	myTemplate.setAttribute("href", "../stylecss/styleDark.css");
-}
-function darkTemplateChild(){
-	var myTemplate = document.getElementById("myTemplate");
-	myTemplate.setAttribute("href", "../../stylecss/styleDark.css");
-}
-function lightTemplate(){
-	var myTemplate = document.getElementById("myTemplate");
-	myTemplate.setAttribute("href", "../stylecss/style.css");
-}
-function lightTemplateChild(){
-	var myTemplate = document.getElementById("myTemplate");
-	myTemplate.setAttribute("href", "../../stylecss/style.css");
-}
 
 
-// Appel de la fonction pour passer au thème 2.
-twChangeStyle("Thème 2");
-
-function twChangeStyle(sTitre) {
-  var i, a;
-  // Boucle tout les élément « link » du document. 
-  for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-    // Si l’élément est à un attribut « rel » et qu’il contient un titre.
-    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
-      // Désactive la feuille de style
-      a.disabled = true;
-      // Active la feuille de style avec le bon titre.
-      if(a.getAttribute("title") == sTitre) a.disabled = false;
-    }
-  }
-}
-**/
-
-
-/**
 function insertParam(key, value) {
     key = encodeURIComponent(key);
     value = encodeURIComponent(value);
@@ -63,7 +25,7 @@ function insertParam(key, value) {
     let params = kvp.join('&');
 
     // reload page with new params
-    document.location.search = params;
+    //document.location.search = params;
 }
 
 function setActiveStyleSheet(title) {
@@ -75,6 +37,7 @@ function setActiveStyleSheet(title) {
       insertParam('theme', title);
     }
   }
+  defaultTemplate();
 }
 function getActiveStyleSheet() {
   var i, a;
@@ -159,5 +122,25 @@ function urlQuerySet(a, b) {
 
 
 // renvoie : "https://www.domain.ext/?cle1=valeur1&cle2=valeur2"
+
+/**
+function defaultTemplate(){
+  var isDark = 0;
+
+  var light = document.getElementById('myTemplate');
+  var dark = document.getElementById('myTemplate2');
+
+  if(light.getAttribute("rel") == "alternate stylesheet"
+    && dark.getAttribute("rel") == "stylesheet"){
+    isDark = 1;
+  }
+  else if(light.getAttribute("rel") == "stylesheet"
+    && dark.getAttribute("rel") == "alternate stylesheet"){
+    isDark = 0;
+  }
+  else{
+    console.log("ERROR, Template isn't good used");
+  }
+}
 
 **/
