@@ -36,6 +36,8 @@ function twChangeStyle(sTitre) {
 }
 **/
 
+
+/**
 function insertParam(key, value) {
     key = encodeURIComponent(key);
     value = encodeURIComponent(value);
@@ -157,3 +159,5 @@ function urlQuerySet(a, b) {
 
 
 // renvoie : "https://www.domain.ext/?cle1=valeur1&cle2=valeur2"
+
+**/
